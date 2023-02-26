@@ -24,7 +24,7 @@ function onFormSubmit(e) {
   e.preventDefault();
 
   if (!email.value || !message.value) {
-    alert('всі поля повиннібути заповнені');
+    alert('Заповність всі поля, будь ласка!');
   } else {
     e.target.reset();
     formData = {};
@@ -34,7 +34,6 @@ function onFormSubmit(e) {
 }
 
 function getValueFromLocalStorage() {
-  //const { email, message } = refs;
   email.value = formData.email || '';
   message.value = formData.message || '';
 }
